@@ -2,7 +2,7 @@
 
 @section('content')
 
-      <div class="col-md-9 col-lg-9 col-sm-9 pull-left">
+    <div class="col-md-9 col-lg-9 col-sm-9 pull-left">
       
       <!-- The justified navigation menu is meant for single line per list item.
            Multiple lines will require custom code not provided by Bootstrap. -->
@@ -26,7 +26,6 @@
             {{ csrf_field() }}
             <input type="hidden" name="commentable_type" value="Project">
             <input type="hidden" name="commentable_id" value="{{ $project->id }}">
-                <div class="form-group">
                 <div class="form-group">
                     <label for="comment-content">Comment</label>
                     <textarea placeholder="Enter comment" id="company-content" name="body" rows="3" class="form-control">
